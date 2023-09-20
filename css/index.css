@@ -1,0 +1,28 @@
+header {
+    display: flex;
+    justify-content: center;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: repeat(2, 33%);
+    justify-items: center;
+    justify-content: space-evenly;
+}
+
+.cardInfo {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 5rem;
+    border: 2px solid black;
+    border-radius: 5%;
+}
+
+
+
+.cardInfo > a > img {
+    border-radius: 5%;
+    width: 300px;
+    height: 150px;
+}
