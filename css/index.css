@@ -55,3 +55,51 @@ header {
     -webkit-transition: opacity .4s ease-out;
     -o-transition: opacity .4s ease-out;
 }
+
+
+/* Footer*/
+footer {
+    display: grid;
+    grid-template-areas:
+      'left center right';
+    color: rgb(34, 32, 32)
+}
+
+#izqFooter { 
+    grid-area: left; 
+}
+#cntrFooter { 
+    grid-area: center; 
+}
+#drchaFooter { 
+    grid-area: right; 
+}
+
+.fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    background: #2c4762;
+    color: white;
+}
+  
+.fa:hover {
+    opacity: 0.7;
+    background: red;
+    color: white;
+}
+
+footer a {
+    color: #2c4762;
+}
+  
+footer a:hover {
+    color: red;
+}
+
+footer div {
+    text-align: center;
+}
+/*-----------*/
