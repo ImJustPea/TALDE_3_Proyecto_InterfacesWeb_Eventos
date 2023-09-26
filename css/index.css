@@ -63,7 +63,8 @@ header {
 }
 
 
-/* Footer*/
+/************************** FOOTER **************************/
+
 footer {
     display: grid;
     grid-template-areas:
@@ -108,4 +109,3 @@ footer a:hover {
 footer div {
     text-align: center;
 }
-/*-----------*/
