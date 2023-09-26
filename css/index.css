@@ -1,11 +1,17 @@
+/************************** CONFIGURACIÓN GLOBAL **************************/
+
 * {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+/************************** HEADER **************************/
 
 header {
     display: flex;
     justify-content: center;
 }
+
+/************************** CONTENIDO CENTRAL **************************/
 
 #container {
     display: grid;
@@ -55,3 +61,5 @@ header {
     -webkit-transition: opacity .4s ease-out;
     -o-transition: opacity .4s ease-out;
 }
+
+/************************** FOOTER **************************/
