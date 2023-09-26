@@ -19,33 +19,23 @@ body {
 
 
 
-.header{
-        
-        width: 100%;
-        background-image: url("../img/Baloncesto/baloncesto2.jpg");
-        background-size: cover;
-        background-position: center;
-        color: orange;
-        text-align: center;
-        padding: 100px 0;
-        height: 200px;
+
+.logo_deportes{
+    width: 150px;
 }
-
-
-.nombre {
-    
-        font-size: 36px;
-        position: absolute;
-        top: 25%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        margin-bottom: 20px;
-        background-color: rgba(0, 0, 0, 0.75);
-        padding: 30px 200px;
-        border-style: double;
-        border-color: orange;
-        border-width: 10px;
-    }
+.titulo{
+    display: flex;
+    background-image: url("../img/Baloncesto/baloncesto_logo_2.jpg");
+    width: 100%;
+    background-position: center;
+    color: white;
+    height: 150px;
+    font-size: 28px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    text-decoration: underline;
+    border: 1px solid rgb(215, 130, 25);
+}
     .fila3{
         display: flex;
         flex-direction: row;
