@@ -1,19 +1,15 @@
-
 body {
-   
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     display: flex;
     flex-direction: column;
     background-color: #008000;
 }
 
-
-
-
-.logo_deportes{
+.logo_deportes {
     width: 150px;
 }
-.titulo{
+
+.titulo {
     display: flex;
     background-image: url("../img/Rugby/fondoRugby.jpg");
     width: 100%;
@@ -21,75 +17,81 @@ body {
     color: white;
     height: 150px;
     font-size: 28px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-style: italic;
     text-decoration: underline;
     border: 1px solid #008000;
     background-repeat: no-repeat;
     background-size: cover;
 }
-    .fila{
-        display: flex;
-        flex-direction: row;
-    }
-    .descripcion{
-        padding: 10px;
-        border-style: double;
-        border-color: black;
-        border-width: 10px;
-        flex: 7; 
-        background-color: #008000;
-    }
-    .premios{
-        padding: 10px;
-        border-style: double;
-        border-color: black;
-        border-width: 10px;
-        background-color: #008000;
-        flex: 3; 
-    }
 
-    .fila2{
-        display: flex;
-        flex-direction: row;
-    }
-    .apuntarse{
-        padding: 10px;
-        border-style: double;
-        border-color: black;
-        border-width: 10px;
-        background-color: #008000;
-        flex: 10 ;
-    }
+.fila {
+    display: flex;
+    flex-direction: row;
+}
 
-    .trophy{
-        height: 118px;
-        width: auto;
-    }
+.descripcion {
+    padding: 10px;
+    border-style: double;
+    border-color: black;
+    border-width: 10px;
+    flex: 7;
+    background-color: #008000;
+}
 
-    .video{
-        display: flex;
-        width: 80%;
-        align-self: center;
-    }
+.premios {
+    padding: 10px;
+    border-style: double;
+    border-color: black;
+    border-width: 10px;
+    background-color: #008000;
+    flex: 3;
+}
 
-/* Footer*/
+.fila2 {
+    display: flex;
+    flex-direction: row;
+}
+
+.apuntarse {
+    padding: 10px;
+    border-style: double;
+    border-color: black;
+    border-width: 10px;
+    background-color: #008000;
+    flex: 10;
+}
+
+.trophy {
+    height: 118px;
+    width: auto;
+}
+
+.video {
+    display: flex;
+    width: 80%;
+    align-self: center;
+}
+
+/* Footer */
 footer {
     grid-area: bottom;
     display: grid;
     grid-template-areas:
-      'left center right';
-    color: rgb(34, 32, 32)
+        'left center right';
+    color: rgb(34, 32, 32);
 }
 
-#izqFooter { 
-    grid-area: left; 
+#izqFooter {
+    grid-area: left;
 }
-#cntrFooter { 
-    grid-area: center; 
+
+#cntrFooter {
+    grid-area: center;
 }
-#drchaFooter { 
-    grid-area: right; 
+
+#drchaFooter {
+    grid-area: right;
 }
 
 .fa {
@@ -101,7 +103,7 @@ footer {
     background: rgb(34, 32, 32);
     color: white;
 }
-  
+
 .fa:hover {
     opacity: 0.7;
     background: red;
@@ -109,9 +111,9 @@ footer {
 }
 
 footer a {
-    color:rgb(34, 32, 32);
+    color: rgb(34, 32, 32);
 }
-  
+
 footer a:hover {
     color: red;
 }
@@ -119,4 +121,73 @@ footer a:hover {
 footer div {
     text-align: center;
 }
-/*-----------*/
+
+
+@media (max-width: 768px) {
+    .titulo {
+        font-size: 24px; 
+    }
+
+    .fila {
+        flex-direction: column; 
+    }
+
+    .descripcion {
+        padding: 10px;
+        border-style: double;
+        border-color: black;
+        border-width: 10px;
+        flex: 5;
+        background-color: #008000;
+    }
+    
+    .premios {
+        padding: 10px;
+        border-style: double;
+        border-color: black;
+        border-width: 10px;
+        background-color: #008000;
+        flex: 3;
+    }
+
+    .trophy {
+        height: 80px;
+    }
+}
+
+
+@media (max-width: 490px) {
+    .titulo {
+        font-size: 20px; 
+    }
+
+    .logo_deportes {
+        width: 100px; 
+    }
+
+    .descripcion, .premios, .apuntarse {
+        padding: 5px; 
+    }
+
+    .trophy {
+        height: 60px; 
+    }
+    footer {
+        grid-area: bottom;
+        display: grid;
+        grid-template-areas:
+            'left center right';
+        color: rgb(34, 32, 32);
+    }
+    #izqFooter {
+        grid-area: left;
+    }
+    
+    #cntrFooter {
+        grid-area: center;
+    }
+    
+    #drchaFooter {
+        grid-area: right;
+    }
+}
