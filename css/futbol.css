@@ -1,3 +1,7 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 #header{
     width: 50px;
 }
@@ -10,10 +14,9 @@
     background-image: url("/img/futbol_logo2.jpg");
     width: 100%;
     background-position: center;
-    color: white;
+    color:darkolivegreen;
     height: 150px;
     font-size: 28px;
-    font-family:Georgia, 'Times New Roman', Times, serif;
     font-style: italic;
     text-decoration: underline;
     border: 1px solid rgb(3, 66, 3);

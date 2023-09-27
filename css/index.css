@@ -9,15 +9,30 @@
 header {
     display: flex;
     justify-content: center;
+    margin-bottom: 50px;
+}
+
+header>img {
+    width: 100%;
+    height: 200px;
 }
 
 /************************** CONTENIDO CENTRAL **************************/
 
 #container {
     display: grid;
-    grid-template-columns: repeat(2, 50%);
+    grid-template-columns: repeat(3, 20%);
     justify-items: center;
     justify-content: space-evenly;
+}
+
+@media screen and (max-width: 1300px) {
+
+    #container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+    }
 }
 
 .cardInfo {
@@ -25,8 +40,8 @@ header {
     justify-content: center;
     text-align: center;
     margin-bottom: 5rem;
-    width: 400px;
-    height: 300px;
+    width: 300px;
+    height: 250px;
     position: relative;
 }
 
@@ -64,23 +79,51 @@ header {
 
 /************************** FOOTER **************************/
 
-footer {
-    display: grid;
-    grid-template-areas:
-        'left center right';
-    color: rgb(34, 32, 32)
+@media screen and (min-width: 1300px) {
+
+    footer {
+        display: grid;
+        grid-template-areas:
+            'left center right';
+        color: rgb(34, 32, 32)
+    }
+
+    #izqFooter {
+        grid-area: left;
+    }
+
+    #cntrFooter {
+        grid-area: center;
+    }
+
+    #drchaFooter {
+        grid-area: right;
+    }
+
 }
 
-#izqFooter {
-    grid-area: left;
-}
 
-#cntrFooter {
-    grid-area: center;
-}
+@media screen and (max-width: 1300px) {
 
-#drchaFooter {
-    grid-area: right;
+    footer {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-gap: 10px;
+    }
+
+    #izqFooter {
+        grid-row: auto;
+    }
+
+    #cntrFooter {
+        grid-row: auto;
+    }
+
+    #drchaFooter {
+        grid-row: auto;
+    }
+
 }
 
 .fa {
