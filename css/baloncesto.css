@@ -66,7 +66,23 @@ body {
         border-width: 10px;
         background-color: rgb(242, 157, 53); 
     }
+    .contenedorbo {
+        position: relative; /* Importante para posicionar el botón dentro del contenedor */
+        width: 100%; /* Ancho completo del contenedor */
+        height:100px; /* Altura del contenedor (ajusta según tus necesidades) */
+        background-color: rgb(242, 157, 53); 
+    }
 
+    .boton-naranja {
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        background-color: rgb(242, 157, 53); 
+        color: black;
+        padding: 10px 20px;
+        border: double;
+        border-radius: 5px;
+    }
 
 
 
