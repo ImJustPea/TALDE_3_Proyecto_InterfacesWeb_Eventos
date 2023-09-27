@@ -9,15 +9,45 @@
 .logo_deportes{
     width: 150px;
 }
-.titulo{
+#header{
     display: flex;
     background-image: url("/img/futbol_logo2.jpg");
     width: 100%;
     background-position: center;
-    color:darkolivegreen;
+    color:rgb(51, 67, 24);
     height: 150px;
     font-size: 28px;
     font-style: italic;
     text-decoration: underline;
-    border: 1px solid rgb(3, 66, 3);
+    border: 1px solid rgb(1, 24, 1);
+}
+
+#content{
+    display:flex;
+    flex-wrap: nowrap;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+.card1 {
+    flex: 6;
+    height: 200px;
+    padding: 20px 20px; 
+    border: 1px solid black;
+    background-image: url("futbol_logo2.jpg");
+}
+
+.card2 {
+    flex: 4;
+    width: 50%;
+    height: 200px;
+    padding: 20px 20px; 
+    border: 1px solid black;
+}
+
+h3{
+    color:rgb(120, 160, 50);
+}
+ul{
+    margin: 0;
+    list-style: inside;
 }

@@ -1,38 +1,77 @@
+
 body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-}
-
-.header{
-    
-        width: 100%;
-        background-image: url("img\Baloncesto\baloncesto.jpg");
-        background-size: cover;
-        background-position: center;
-        color: white;
-        text-align: center;
-        padding: 100px 0;
-}
-
-.trophy {
-    height: 200px;
-    width: auto;
+   
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    flex-direction: column;
+    background-color: #008000;
 }
 
 
-.nombre {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: #fff;
-    padding: 20px;
-    font-size: 24px;
-    text-align: center;
-    width: 80%;
-    max-width: 400px;
+
+
+.logo_deportes{
+    width: 150px;
 }
+.titulo{
+    display: flex;
+    background-image: url("../img/Rugby/fondoRugby.jpg");
+    width: 100%;
+    background-position: center;
+    color: white;
+    height: 150px;
+    font-size: 28px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    text-decoration: underline;
+    border: 1px solid #008000;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+    .fila{
+        display: flex;
+        flex-direction: row;
+    }
+    .descripcion{
+        padding: 10px;
+        border-style: double;
+        border-color: black;
+        border-width: 10px;
+        flex: 7; 
+        background-color: #008000;
+    }
+    .premios{
+        padding: 10px;
+        border-style: double;
+        border-color: black;
+        border-width: 10px;
+        background-color: #008000;
+        flex: 3; 
+    }
+
+    .fila2{
+        display: flex;
+        flex-direction: row;
+    }
+    .apuntarse{
+        padding: 10px;
+        border-style: double;
+        border-color: black;
+        border-width: 10px;
+        background-color: #008000;
+        flex: 10 ;
+    }
+
+    .trophy{
+        height: 118px;
+        width: auto;
+    }
+
+    .video{
+        display: flex;
+        width: 80%;
+        align-self: center;
+    }
 
 /* Footer*/
 footer {
@@ -59,7 +98,7 @@ footer {
     width: 30px;
     text-align: center;
     text-decoration: none;
-    background: #2c4762;
+    background: rgb(34, 32, 32);
     color: white;
 }
   
@@ -70,7 +109,7 @@ footer {
 }
 
 footer a {
-    color: #2c4762;
+    color:rgb(34, 32, 32);
 }
   
 footer a:hover {
