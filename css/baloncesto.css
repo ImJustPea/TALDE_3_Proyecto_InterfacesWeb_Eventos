@@ -31,7 +31,7 @@ body {
     .fila3{
         display: flex;
         flex-direction: row;
-        
+       
     }
     .descripcion{
         
@@ -48,7 +48,7 @@ body {
         border-style: double;
         border-color: black;
         border-width: 10px;
-        
+        background-color: rgb(242, 157, 53);
         flex: 3; ;
     }
     .video{
