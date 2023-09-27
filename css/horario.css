@@ -1,67 +1,85 @@
-header{
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+header {
     text-align: center;
-    font-family: sans-serif;
     border-top: 2px solid black;
     border-left: 2px solid black;
     border-right: 2px solid black;
     font-style: italic;
     background-color: rgb(240, 245, 247);
-    background-image: linear-gradient(to bottom,#f7b6b6, rgb(191, 230, 245));
-    font-family: algerian;
+    background-image: linear-gradient(to bottom, #f7b6b6, rgb(191, 230, 245));
 }
 
-.content{
+header img {
+    width: 100px;
+    height: 100px;
+}
+
+.content {
     display: grid;
     grid-template-columns: 1fr 1fr;
     text-align: center;
-    font-family: calibri;
     border: 1px solid black;
     text-decoration: solid;
-    background-image:url('/img/volei_fondo.png');
+    background-image: url('/img/volei_fondo.png');
     animation: moverImagen 25s linear infinite;
 }
 
 @keyframes moverImagen {
     0% {
-        background-position: 0 0; /* Posición inicial de la imagen de fondo */
+        background-position: 0 0;
+        /* Posición inicial de la imagen de fondo */
     }
+
     100% {
-        background-position: 100% 0; /* Posición final de la imagen de fondo */
+        background-position: 100% 0;
+        /* Posición final de la imagen de fondo */
     }
 }
-
 
 .deporte {
     border: 1px solid black;
 }
-img{
-    width: 5%;
+
+.content img {
+    width: 75px;
+    height: 75px;
 }
 
-h2{
+h2 {
+    margin-top: -10px;
     font-size: 30px;
     text-decoration: underline;
-    font-family: algerian;
 }
 
-p{
+p {
     font-size: 19px;
 }
 
-h3{
+h3 {
     font-size: 20px;
 }
-.partido{
+
+.partido {
     opacity: 1;
 }
-.deporte_Voleibol{
+
+.deporte_Voleibol {
     background-size: cover;
 }
 
 
 @media screen and (max-width: 768px) {
 
-    .content{
+    .content {
         display: grid;
         grid-template-columns: 1fr;
         grid-gap: 10px;

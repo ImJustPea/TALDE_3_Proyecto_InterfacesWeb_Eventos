@@ -4,26 +4,61 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    background-image: url('/img/volei_fondo.png');
+    animation: moverImagen 25s linear infinite;
+}
+
+@media screen and (max-width: 1300px) {
+    body {
+        height: 100%;
+        display: block;
+        margin: 0;
+        padding: 0;
+        background-image: url('/img/volei_fondo.png');
+        animation: moverImagen 25s linear infinite;
+    }    
+}
+
+
+@keyframes moverImagen {
+    0% {
+        background-position: 0 0;
+        /* Posición inicial de la imagen de fondo */
+    }
+
+    100% {
+        background-position: 100% 0;
+        /* Posición final de la imagen de fondo */
+    }
+}
+
 /************************** HEADER **************************/
 
 header {
     display: flex;
     justify-content: center;
-    margin-bottom: 50px;
 }
 
-header>img {
-    width: 100%;
-    height: 200px;
+header h1 {
+    padding: 25px;
+    background-color: #688aaa;
+    border: 5px solid #2c4762;
 }
 
 /************************** CONTENIDO CENTRAL **************************/
 
 #container {
+    margin-top: 5rem;
     display: grid;
-    grid-template-columns: repeat(3, 20%);
+    grid-template-columns: repeat(3, 33%);
     justify-items: center;
-    justify-content: space-evenly;
 }
 
 @media screen and (max-width: 1300px) {
@@ -82,24 +117,11 @@ header>img {
 @media screen and (min-width: 1300px) {
 
     footer {
+        margin-top: 5rem;
         display: grid;
-        grid-template-areas:
-            'left center right';
-        color: rgb(34, 32, 32)
+        grid-template-columns: repeat(3, 33%);
+        color: rgb(34, 32, 32);
     }
-
-    #izqFooter {
-        grid-area: left;
-    }
-
-    #cntrFooter {
-        grid-area: center;
-    }
-
-    #drchaFooter {
-        grid-area: right;
-    }
-
 }
 
 
@@ -109,19 +131,7 @@ header>img {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
-        grid-gap: 10px;
-    }
-
-    #izqFooter {
-        grid-row: auto;
-    }
-
-    #cntrFooter {
-        grid-row: auto;
-    }
-
-    #drchaFooter {
-        grid-row: auto;
+        grid-gap: 30px;
     }
 
 }
