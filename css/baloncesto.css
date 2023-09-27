@@ -31,7 +31,7 @@ body {
     .fila3{
         display: flex;
         flex-direction: row;
-        margin-top: 10px;
+       
     }
     .descripcion{
         
@@ -40,7 +40,7 @@ body {
         border-color: black;
         border-width: 10px;
         flex: 7; 
-        margin-right: 10px;
+        
         background-color: rgb(242, 157, 53);
     }
     .premios{
@@ -53,8 +53,87 @@ body {
     }
     .video{
         display: flex;
-        margin-top: 10px;
         
         width: 80%;
         align-self: center;
+    }
+
+    .inscripcion{
+        
+        padding: 10px;
+        border-style: double;
+        border-color: black;
+        border-width: 10px;
+        background-color: rgb(242, 157, 53); 
+    }
+    .contenedorbo {
+        position: relative; /* Importante para posicionar el botón dentro del contenedor */
+        width: 100%; /* Ancho completo del contenedor */
+        height:100px; /* Altura del contenedor (ajusta según tus necesidades) */
+        background-color: rgb(242, 157, 53); 
+    }
+
+    .boton-naranja {
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        background-color: rgb(242, 157, 53); 
+        color: black;
+        padding: 10px 20px;
+        border: double;
+        border-radius: 5px;
+    }
+
+
+
+
+
+
+
+
+    footer {
+        display: grid;
+        grid-template-areas:
+            'left center right';
+        color: rgb(34, 32, 32)
+    }
+    
+    #izqFooter {
+        grid-area: left;
+    }
+    
+    #cntrFooter {
+        grid-area: center;
+    }
+    
+    #drchaFooter {
+        grid-area: right;
+    }
+    
+    .fa {
+        padding: 10px;
+        font-size: 30px;
+        width: 30px;
+        text-align: center;
+        text-decoration: none;
+        background: #2c4762;
+        color: white;
+    }
+    
+    .fa:hover {
+        opacity: 0.7;
+        background: red;
+        color: white;
+    }
+    
+    footer a {
+        color: #2c4762;
+    }
+    
+    footer a:hover {
+        color: red;
+    }
+    
+    footer div {
+        text-align: center;
     }
