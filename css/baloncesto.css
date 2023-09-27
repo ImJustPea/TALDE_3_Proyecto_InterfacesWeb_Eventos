@@ -31,7 +31,7 @@ body {
     .fila3{
         display: flex;
         flex-direction: row;
-        margin-top: 10px;
+        
     }
     .descripcion{
         
@@ -40,7 +40,7 @@ body {
         border-color: black;
         border-width: 10px;
         flex: 7; 
-        margin-right: 10px;
+        
         background-color: rgb(242, 157, 53);
     }
     .premios{
@@ -48,18 +48,18 @@ body {
         border-style: double;
         border-color: black;
         border-width: 10px;
-        background-color: rgb(242, 157, 53);
+        
         flex: 3; ;
     }
     .video{
         display: flex;
-        margin-top: 10px;
+        
         width: 80%;
         align-self: center;
     }
 
     .inscripcion{
-        margin-top: 10px;
+        
         padding: 10px;
         border-style: double;
         border-color: black;
