@@ -23,30 +23,42 @@
 }
 
 #content{
-    display:flex;
-    flex-wrap: nowrap;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-align: center;
-    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;    
 }
 .card1 {
     background-color: rgb(214, 231, 212);
-    flex: 6;
-    height: 200px;
-    margin-top: 50px;
+    height: 210px; 
     padding: 20px 20px; 
     border: 3px solid black;
-    border-right: none;
 }
 
 .card2 {
     background-color: rgb(214, 231, 212);
-    flex: 4;
-    width: 50%;
-    margin-top: 50px;
-    height: 200px;
+    height: 210px;
     padding: 20px 20px; 
     border: 3px solid black;
+
+}
+.card2 img {
+    max-width: 100%; /* La imagen no será más ancha que el div */
+    max-height: 100%; /* La imagen no será más alta que el div */
+    width: auto; /* Ajusta automáticamente el ancho de la imagen */
+    height: 160px; /* Ajusta automáticamente la altura de la imagen */
+    display: block; /* Elimina cualquier espacio adicional debajo de la imagen */
+    margin: 0 auto; /* Centra la imagen horizontalmente en el div si es necesario */
+    float: right;
+}
+
+.card3 {
+    background-color: rgb(214, 231, 212);
+    height: 420px;
+    padding: 20px 20px; 
+    border: 3px solid black;
+}
+.card2 ul{
+    float:left;
 }
 
 h2{
