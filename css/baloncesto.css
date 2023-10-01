@@ -1,5 +1,5 @@
 
-body {
+/*body {
    
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     display: flex;
@@ -7,7 +7,30 @@ body {
     background-color: rgb(246, 186, 76);
     
    
+}*/
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    background-image: url('/img/volei_fondo.png');
+    animation: moverImagen 25s linear infinite;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
+
+@keyframes moverImagen {
+    0% {
+        background-position: 0 0;
+        /* Posición inicial de la imagen de fondo */
+    }
+
+    100% {
+        background-position: 100% 0;
+        /* Posición final de la imagen de fondo */
+    }
+}
+
 
 
 
@@ -26,7 +49,7 @@ body {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-style: italic;
     text-decoration: underline;
-    border: 1px solid rgb(215, 130, 25);
+    border: 3px solid rgb(215, 130, 25);
 }
     .fila3{
         display: flex;
@@ -36,18 +59,18 @@ body {
     .descripcion{
         
         padding: 10px;
-        border-style: double;
+        border-style: solid;
         border-color: black;
-        border-width: 10px;
+        border-width: 3px;
         flex: 7; 
         
         background-color: rgb(242, 157, 53);
     }
     .premios{
         padding: 10px;
-        border-style: double;
+        border-style: solid;
         border-color: black;
-        border-width: 10px;
+        border-width: 3px;
         background-color: rgb(242, 157, 53);
         flex: 3; ;
     }
@@ -61,15 +84,15 @@ body {
     .inscripcion{
         
         padding: 10px;
-        border-style: double;
+        border-style: solid;
         border-color: black;
-        border-width: 10px;
+        border-width: 3px;
         background-color: rgb(242, 157, 53); 
     }
     .contenedorbo {
-        position: relative; /* Importante para posicionar el botón dentro del contenedor */
-        width: 100%; /* Ancho completo del contenedor */
-        height:100px; /* Altura del contenedor (ajusta según tus necesidades) */
+        position: relative; 
+        width: 100%; 
+        height:100px; 
         background-color: rgb(242, 157, 53); 
     }
 
@@ -80,7 +103,7 @@ body {
         background-color: rgb(242, 157, 53); 
         color: black;
         padding: 10px 20px;
-        border: double;
+        border: solid;
         border-radius: 5px;
     }
 
@@ -90,24 +113,26 @@ body {
 
 
 
+    @media screen and (min-width: 1300px) {
 
-    footer {
-        display: grid;
-        grid-template-areas:
-            'left center right';
-        color: rgb(34, 32, 32)
+        footer {
+            margin-top: 5rem;
+            display: grid;
+            grid-template-columns: repeat(3, 33%);
+            color: rgb(34, 32, 32);
+        }
     }
     
-    #izqFooter {
-        grid-area: left;
-    }
     
-    #cntrFooter {
-        grid-area: center;
-    }
+    @media screen and (max-width: 1300px) {
     
-    #drchaFooter {
-        grid-area: right;
+        footer {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+            grid-gap: 30px;
+        }
+    
     }
     
     .fa {
