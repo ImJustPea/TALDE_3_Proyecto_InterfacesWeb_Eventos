@@ -1,20 +1,15 @@
 body {
-    height: 100vh;
     display: flex;
     margin: 0;
     padding: 0;
     flex-direction: column;
-    margin: 0;
-    padding: 0;
     background-image: url('/img/volei_fondo.png');
     animation: moverImagen 25s linear infinite;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: rgba(0, 128, 0, 0.5);
 }
 
-.logo_deportes {
-    width: 150px;
-}
+/************************** HEADER **************************/
 
 .titulo {
     display: flex;
@@ -31,6 +26,26 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+@media screen and (max-width: 800px) {
+    .titulo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .titulo h1 {
+        display: none;
+    }
+}
+
+/************************** CONTENIDO **************************/
+
+.logo_deportes {
+    width: 150px;
+}
+
+
 
 .fila {
     display: flex;
@@ -69,6 +84,24 @@ body {
     flex: 10;
 }
 
+.contenedorbo {
+    position: relative;
+    width: 100%;
+    height: 100px;
+}
+
+.boton {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    background-color: rgb(214, 245, 212);
+    color: black;
+    padding: 10px 20px;
+    border: solid;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
 .trophy {
     height: 118px;
     width: auto;
@@ -76,29 +109,29 @@ body {
 
 .video {
     display: flex;
-    width: 80%;
+    margin-top: 50px;
     align-self: center;
 }
 
-/* Footer */
+/************************** FOOTER **************************/
+
 footer {
-    grid-area: bottom;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     display: grid;
-    grid-template-areas:
-        'left center right';
+    grid-template-columns: repeat(3, 33%);
     color: rgb(34, 32, 32);
 }
 
-#izqFooter {
-    grid-area: left;
-}
+@media screen and (max-width: 1000px) {
 
-#cntrFooter {
-    grid-area: center;
-}
+    footer {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-gap: 30px;
+    }
 
-#drchaFooter {
-    grid-area: right;
 }
 
 .fa {
@@ -107,7 +140,7 @@ footer {
     width: 30px;
     text-align: center;
     text-decoration: none;
-    background: rgb(34, 32, 32);
+    background: #2c4762;
     color: white;
 }
 
@@ -118,7 +151,7 @@ footer {
 }
 
 footer a {
-    color: rgb(34, 32, 32);
+    color: #2c4762;
 }
 
 footer a:hover {
@@ -132,11 +165,11 @@ footer div {
 
 @media (max-width: 768px) {
     .titulo {
-        font-size: 24px; 
+        font-size: 24px;
     }
 
     .fila {
-        flex-direction: column; 
+        flex-direction: column;
     }
 
     .descripcion {
@@ -147,7 +180,7 @@ footer div {
         flex: 5;
         background-color: rgba(0, 128, 0, 0.5);
     }
-    
+
     .premios {
         padding: 10px;
         border-style: double;
@@ -165,40 +198,25 @@ footer div {
 
 @media (max-width: 490px) {
     .titulo {
-        font-size: 20px; 
+        font-size: 20px;
     }
 
     .logo_deportes {
-        width: 100px; 
+        width: 100px;
     }
 
-    .descripcion, .premios, .apuntarse {
-        padding: 5px; 
+    .descripcion,
+    .premios,
+    .apuntarse {
+        padding: 5px;
     }
 
     .trophy {
-        height: 60px; 
-    }
-    footer {
-        grid-area: bottom;
-        display: grid;
-        grid-template-areas:
-            'left center right';
-        color: rgb(34, 32, 32);
-    }
-    #izqFooter {
-        grid-area: left;
-    }
-    
-    #cntrFooter {
-        grid-area: center;
-    }
-    
-    #drchaFooter {
-        grid-area: right;
+        height: 60px;
     }
 }
 
+/************************** KeyFrame Fondo **************************/
 
 @keyframes moverImagen {
     0% {
@@ -211,5 +229,3 @@ footer div {
         /* Posición final de la imagen de fondo */
     }
 }
-
-

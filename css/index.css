@@ -19,10 +19,6 @@ body {
     body {
         height: 100%;
         display: block;
-        margin: 0;
-        padding: 0;
-        background-image: url('/img/volei_fondo.png');
-        animation: moverImagen 25s linear infinite;
     }    
 }
 
@@ -51,6 +47,15 @@ header h1 {
     background-color: #688aaa;
     border: 5px solid #2c4762;
 }
+
+
+@media screen and (max-width: 1000px) {
+    header h1 {
+        font-size: 30px;
+    }
+}
+
+
 /************************** CONTENIDO CENTRAL **************************/
 
 #container {
@@ -60,7 +65,7 @@ header h1 {
     justify-items: center;
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1000px) {
 
     #container {
         display: grid;
@@ -113,18 +118,15 @@ header h1 {
 
 /************************** FOOTER **************************/
 
-@media screen and (min-width: 1300px) {
-
-    footer {
-        margin-top: 5rem;
-        display: grid;
-        grid-template-columns: repeat(3, 33%);
-        color: rgb(34, 32, 32);
-    }
+footer {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    color: rgb(34, 32, 32);
 }
 
-
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1000px) {
 
     footer {
         display: grid;

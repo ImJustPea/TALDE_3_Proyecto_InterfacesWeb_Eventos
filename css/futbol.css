@@ -2,106 +2,139 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-#header{
-    width: 50px;
+body {
+    margin: 0px;
+    background-color: rgb(214, 231, 212);
+    background-image: url('/img/volei_fondo.png');
+    animation: moverImagen 25s linear infinite;
 }
 
-.logo_deportes{
-    width: 150px;
-}
-#header{
+/************************** HEADER **************************/
+
+#header {
     display: flex;
-    background-image: url("/img/futbol_logo2.jpg");
+    background-image: url("/img/Futbol/futbol_logo2.jpg");
     width: 100%;
     background-position: center;
-    color:rgb(51, 67, 24);
+    color: rgb(51, 67, 24);
     height: 150px;
     font-size: 28px;
     font-style: italic;
     text-decoration: underline;
-    border: 5px solid rgb(1, 24, 1);
 }
 
-#content{
+@media screen and (max-width: 800px) {
+    #header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #header h1 {
+        display: none;
+    }
+}
+
+/************************** CONTENIDO **************************/
+
+.logo_deportes {
+    width: 150px;
+}
+
+
+.descPremios {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;    
-}
-.card1 {
-    background-color: rgb(214, 231, 212);
-    padding: 20px 20px; 
-    border: 10px solid black;
-    border-style: ridge;
-
 }
 
-.card2 {
-    background-color: rgb(214, 231, 212);
-    
-    padding: 20px 20px; 
-    border: 10px solid black;
+.descripcion {
+    padding: 20px;
+    border: 5px solid black;
     border-style: ridge;
 }
-.card2 img {
-    max-width: 100%; /* La imagen no será más ancha que el div */
-    max-height: 100%; /* La imagen no será más alta que el div */
-    width: auto; /* Ajusta automáticamente el ancho de la imagen */
-    height: 160px; /* Ajusta automáticamente la altura de la imagen */
-    display: block; /* Elimina cualquier espacio adicional debajo de la imagen */
-    margin: 0 auto; /* Centra la imagen horizontalmente en el div si es necesario */
-    float: right;
+
+.premios {
+    padding: 20px 20px;
+    border: 5px solid black;
+    border-style: ridge;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.imagenPremios img {
+    max-width: 100%;
+    max-height: 100%;
+    width: 250px;
+    height: auto;
+    display: flex;
 }
 
 
-.card3 {
-    background-color: rgb(214, 231, 212);
-    padding: 20px 20px; 
+.inscripcion {
+    padding: 20px 20px;
     border: 3px solid black;
     overflow: hidden;
-    border: 10px solid black;
+    border: 5px solid black;
     border-style: ridge;
 }
 
-.card4 {
-    background-color: rgb(214, 231, 212);
-    padding: 20px 20px; 
-    border: 3px solid black;
-    overflow: hidden;
-    border: 10px solid black;
-    border-style: ridge;
-}
-.card2 ul{
-    float:left;
+.contenedorbo {
+    position: relative;
+    width: 100%;
+    height: 100px;
 }
 
-h2{
-    color:rgb(51, 68, 21);
+.boton {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    background-color: rgb(214, 245, 212);
+    color: black;
+    padding: 10px 20px;
+    border: solid;
+    border-radius: 5px;
+    cursor: pointer;
 }
-ul{
+
+.video {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.card2 ul {
+    float: left;
+}
+
+h2 {
+    color: rgb(51, 68, 21);
+}
+
+ul {
     margin: 0;
     list-style: inside;
-    
+
 }
+
+/************************** FOOTER **************************/
+
 footer {
-    grid-area: bottom;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     display: grid;
-    grid-template-areas: 'left center right';
+    grid-template-columns: repeat(3, 33%);
     color: rgb(34, 32, 32);
-    background-color: rgb(214, 231, 212);
-    border: 10px solid black;
-    border-style: ridge;
 }
 
-#izqFooter {
-    grid-area: left;
-}
+@media screen and (max-width: 1000px) {
 
-#cntrFooter {
-    grid-area: center;
-}
+    footer {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-gap: 30px;
+    }
 
-#drchaFooter {
-    grid-area: right;
 }
 
 .fa {
@@ -110,7 +143,7 @@ footer {
     width: 30px;
     text-align: center;
     text-decoration: none;
-    background: rgb(34, 32, 32);
+    background: #2c4762;
     color: white;
 }
 
@@ -121,7 +154,7 @@ footer {
 }
 
 footer a {
-    color: rgb(34, 32, 32);
+    color: #2c4762;
 }
 
 footer a:hover {
@@ -133,32 +166,37 @@ footer div {
 }
 
 
-@media screen and (max-width: 768px) {
-
-    #content{
-        display: grid;
+@media screen and (max-width: 1200px) {
+    .premios {
         grid-template-columns: 1fr;
     }
 
-    .card4 iframe{
-        height: 400px;
+    .imagenPremios {
+        display: none;
     }
-    footer {
-        grid-area: bottom;
-        display: grid;
-        grid-template-areas:
-            'left center right';
-        color: rgb(34, 32, 32);
+}
+
+@media screen and (max-width: 800px) {
+
+    .descPremios {
+        grid-template-columns: 1fr;
     }
-    #izqFooter {
-        grid-area: left;
+
+    .imagenPremios {
+        display: flex;
     }
-    
-    #cntrFooter {
-        grid-area: center;
+}
+
+/************************** KeyFrame Fondo **************************/
+
+@keyframes moverImagen {
+    0% {
+        background-position: 0 0;
+        /* Posición inicial de la imagen de fondo */
     }
-    
-    #drchaFooter {
-        grid-area: right;
+
+    100% {
+        background-position: 100% 0;
+        /* Posición final de la imagen de fondo */
     }
 }

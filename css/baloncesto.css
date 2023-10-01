@@ -1,32 +1,180 @@
-
-/*body {
-   
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    display: flex;
-    flex-direction: column;
-    background-color: rgb(246, 186, 76);
-    
-   
-}*/
 body {
-    height: 100vh;
     display: flex;
     flex-direction: column;
     margin: 0;
     padding: 0;
     background-image: url('/img/volei_fondo.png');
     animation: moverImagen 25s linear infinite;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    background-color: rgba(242, 157, 53, 0.5); 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgba(242, 157, 53, 0.5);
 }
 
-#content{
-    display:flex;
-    flex-wrap: nowrap;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-align: center;
-    
+/************************** HEADER **************************/
+
+#header {
+    display: flex;
+    background-image: url("../img/Baloncesto/baloncesto_logo_2.jpg");
+    width: 100%;
+    background-position: center;
+    color: white;
+    height: 150px;
+    font-size: 28px;
+    font-style: italic;
+    text-decoration: underline;
 }
+
+@media screen and (max-width: 800px) {
+    #header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #header h1 {
+        display: none;
+    }
+}
+
+/************************** CONTENIDO **************************/
+
+#content {
+    display: flex;
+    flex-wrap: nowrap;
+    text-align: center;
+}
+
+.logo_deportes {
+    width: 150px;
+}
+
+
+.descripcion {
+
+    padding: 10px;
+    border-style: solid;
+    border-color: black;
+    border-width: 3px;
+    flex: 7;
+
+}
+
+.premios {
+    padding: 10px;
+    border-style: solid;
+    border-color: black;
+    border-width: 3px;
+    flex: 3;
+}
+
+.video {
+    display: flex;
+    margin-top: 50px;
+    align-self: center;
+}
+
+.inscripcion {
+
+    padding: 10px;
+    border-style: solid;
+    border-color: black;
+    border-width: 3px;
+
+}
+
+.contenedorbo {
+    position: relative;
+    width: 100%;
+    height: 100px;
+
+}
+
+.boton {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    background-color: rgba(242, 157, 53, 0.5);
+    color: black;
+    padding: 10px 20px;
+    border: solid;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    #content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .premios {
+        width: 100%;
+    }
+
+    .descripcion {
+        width: 100%;
+    }
+
+    .inscripcion {
+        width: 100%;
+    }
+
+    .video {
+        width: 100%;
+    }
+}
+
+/************************** FOOTER **************************/
+
+footer {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    color: rgb(34, 32, 32);
+}
+
+@media screen and (max-width: 1000px) {
+
+    footer {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-gap: 30px;
+    }
+
+}
+
+.fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    background: #2c4762;
+    color: white;
+}
+
+.fa:hover {
+    opacity: 0.7;
+    background: red;
+    color: white;
+}
+
+footer a {
+    color: #2c4762;
+}
+
+footer a:hover {
+    color: red;
+}
+
+footer div {
+    text-align: center;
+}
+
+/************************** KeyFrame Fondo **************************/
 
 @keyframes moverImagen {
     0% {
@@ -39,169 +187,3 @@ body {
         /* Posición final de la imagen de fondo */
     }
 }
-
-
-
-
-
-.logo_deportes{
-    width: 150px;
-}
-
-
-
-
-#header{
-    display: flex;
-    background-image: url("../img/Baloncesto/baloncesto_logo_2.jpg");
-    width: 100%;
-    background-position: center;
-    color: white;
-    height: 150px;
-    font-size: 28px;
-    font-style: italic;
-    text-decoration: underline;
-    background-color: rgba(242, 157, 53, 0.5);
-}
-
-
-
-.descripcion-premios {
-    display: flex;
-    flex-direction: row; /* Coloca descripcion y premios en la misma fila */
-   
-}
-
-
-   
-    .descripcion{
-        
-        padding: 10px;
-        border-style: solid;
-        border-color: black;
-        border-width: 3px;
-        flex: 7; 
-        
-        background-color: rgba(242, 157, 53, 0.5);
-    }
-    .premios{
-        padding: 10px;
-        border-style: solid;
-        border-color: black;
-        border-width: 3px;
-        background-color: rgba(242, 157, 53, 0.5);
-        flex: 3; 
-    }
-    .video{
-        display: flex;
-       
-        width: 80%;
-        align-self: center;
-    }
-
-    .inscripcion{
-        
-        padding: 10px;
-        border-style: solid;
-        border-color: black;
-        border-width: 3px;
-        background-color: rgba(242, 157, 53, 0.5); 
-        
-    }
-    .contenedorbo {
-        position: relative; 
-        width: 100%; 
-        height:100px; 
-        
-    }
-
-    .boton-naranja {
-        position: absolute;
-        top: 50%;
-        right: 20px;
-        background-color: rgba(242, 157, 53, 0.5);
-        color: black;
-        padding: 10px 20px;
-        border: solid;
-        border-radius: 5px;
-    }
-
-
-
-
-    @media screen and (max-width: 768px) {
-
-        #content{
-            display: flex;
-            flex-direction: column;
-        }
-        .premios {
-            width: 100%;
-        }
-        .descripcion{
-            width: 100%;
-        }
-        .inscripcion{
-            width: 100%;  
-        }
-        .video{
-            width: 100%; 
-        }
-    }
-
-
-
-
-
-
-
-
-    @media screen and (min-width: 1300px) {
-
-        footer {
-            margin-top: 5rem;
-            display: grid;
-            grid-template-columns: repeat(3, 33%);
-            color: rgb(34, 32, 32);
-        }
-    }
-    
-    
-    @media screen and (max-width: 1300px) {
-    
-        footer {
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: 1fr;
-            grid-gap: 30px;
-        }
-    
-    }
-    
-    .fa {
-        padding: 10px;
-        font-size: 30px;
-        width: 30px;
-        text-align: center;
-        text-decoration: none;
-        background: #2c4762;
-        color: white;
-    }
-    
-    .fa:hover {
-        opacity: 0.7;
-        background: red;
-        color: white;
-    }
-    
-    footer a {
-        color: #2c4762;
-    }
-    
-    footer a:hover {
-        color: red;
-    }
-    
-    footer div {
-        text-align: center;
-    }
