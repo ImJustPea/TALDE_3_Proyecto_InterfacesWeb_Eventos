@@ -31,15 +31,17 @@
     background-color: rgb(214, 231, 212);
     height: 210px; 
     padding: 20px 20px; 
-    border: 3px solid black;
+    border: 10px solid black;
+    border-style: ridge;
+
 }
 
 .card2 {
     background-color: rgb(214, 231, 212);
     height: 210px;
     padding: 20px 20px; 
-    border: 3px solid black;
-
+    border: 10px solid black;
+    border-style: ridge;
 }
 .card2 img {
     max-width: 100%; /* La imagen no será más ancha que el div */
@@ -51,11 +53,25 @@
     float: right;
 }
 
+
 .card3 {
     background-color: rgb(214, 231, 212);
     height: 420px;
     padding: 20px 20px; 
     border: 3px solid black;
+    overflow: hidden;
+    border: 10px solid black;
+    border-style: ridge;
+}
+
+.card4 {
+    background-color: rgb(214, 231, 212);
+    height: 420px;
+    padding: 20px 20px; 
+    border: 3px solid black;
+    overflow: hidden;
+    border: 10px solid black;
+    border-style: ridge;
 }
 .card2 ul{
     float:left;
@@ -69,6 +85,57 @@ ul{
     list-style: inside;
     
 }
+footer {
+    grid-area: bottom;
+    display: grid;
+    grid-template-areas:
+        'left center right';
+    color: rgb(34, 32, 32);
+    background-color: rgb(214, 231, 212);
+    border: 10px solid black;
+    border-style: ridge;
+}
+
+#izqFooter {
+    grid-area: left;
+}
+
+#cntrFooter {
+    grid-area: center;
+}
+
+#drchaFooter {
+    grid-area: right;
+}
+
+.fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    background: rgb(34, 32, 32);
+    color: white;
+}
+
+.fa:hover {
+    opacity: 0.7;
+    background: red;
+    color: white;
+}
+
+footer a {
+    color: rgb(34, 32, 32);
+}
+
+footer a:hover {
+    color: red;
+}
+
+footer div {
+    text-align: center;
+}
+
 
 @media screen and (max-width: 768px) {
 
