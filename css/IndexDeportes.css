@@ -1,0 +1,164 @@
+/************************** CONFIGURACIÓN GLOBAL Y BODY **************************/
+
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    background-image: url('/img/volei_fondo.png');
+    animation: moverImagen 25s linear infinite;
+}
+
+@media screen and (max-width: 1300px) {
+    body {
+        height: 100%;
+        display: block;
+        margin: 0;
+        padding: 0;
+        background-image: url('/img/volei_fondo.png');
+        animation: moverImagen 25s linear infinite;
+    }    
+}
+
+
+@keyframes moverImagen {
+    0% {
+        background-position: 0 0;
+        /* Posición inicial de la imagen de fondo */
+    }
+
+    100% {
+        background-position: 100% 0;
+        /* Posición final de la imagen de fondo */
+    }
+}
+
+/************************** HEADER **************************/
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+header h1 {
+    padding: 25px;
+    background-color: #688aaa;
+    border: 5px solid #2c4762;
+}
+/************************** CONTENIDO CENTRAL **************************/
+
+#container {
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    justify-items: center;
+}
+
+@media screen and (max-width: 1300px) {
+
+    #container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+    }
+}
+
+.cardInfo {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 5rem;
+    width: 300px;
+    height: 250px;
+    position: relative;
+}
+
+.cardInfo>a>img {
+    border: 3px solid black;
+    border-radius: 5%;
+    width: 100%;
+    height: 100%;
+}
+
+.textOculto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.4s ease-out;
+}
+
+.cardInfo:hover .textOculto {
+    opacity: 1;
+}
+
+.cardInfo:hover>a>img {
+    opacity: 0.45;
+    transition: opacity .4s ease-out;
+    -moz-transition: opacity .4s ease-out;
+    -webkit-transition: opacity .4s ease-out;
+    -o-transition: opacity .4s ease-out;
+}
+
+/************************** FOOTER **************************/
+
+@media screen and (min-width: 1300px) {
+
+    footer {
+        margin-top: 5rem;
+        display: grid;
+        grid-template-columns: repeat(3, 33%);
+        color: rgb(34, 32, 32);
+    }
+}
+
+
+@media screen and (max-width: 1300px) {
+
+    footer {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-gap: 30px;
+    }
+
+}
+
+.fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    background: #2c4762;
+    color: white;
+}
+
+.fa:hover {
+    opacity: 0.7;
+    background: red;
+    color: white;
+}
+
+footer a {
+    color: #2c4762;
+}
+
+footer a:hover {
+    color: red;
+}
+
+footer div {
+    text-align: center;
+}
