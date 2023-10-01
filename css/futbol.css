@@ -4,7 +4,7 @@
 
 body {
     margin: 0px;
-    background-color: rgb(214, 231, 212);
+    background-color: rgba(173, 199, 170, 0.5);
     background-image: url('/img/volei_fondo.png');
     animation: moverImagen 25s linear infinite;
 }
@@ -45,12 +45,14 @@ body {
 .descPremios {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    background-color: rgba(173, 199, 170, 0.5);
 }
 
 .descripcion {
     padding: 20px;
     border: 5px solid black;
     border-style: ridge;
+    background-color: rgba(173, 199, 170, 0.5);
 }
 
 .premios {
@@ -76,6 +78,8 @@ body {
     overflow: hidden;
     border: 5px solid black;
     border-style: ridge;
+    background-color: rgba(173, 199, 170, 0.5);
+
 }
 
 .contenedorbo {

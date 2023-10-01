@@ -55,6 +55,7 @@ body {
     border-color: black;
     border-width: 3px;
     flex: 7;
+    background-color: rgba(242, 157, 53, 0.5);
 
 }
 
@@ -64,6 +65,8 @@ body {
     border-color: black;
     border-width: 3px;
     flex: 3;
+    background-color: rgba(242, 157, 53, 0.5);
+
 }
 
 .video {
@@ -78,6 +81,7 @@ body {
     border-style: solid;
     border-color: black;
     border-width: 3px;
+    background-color: rgba(242, 157, 53, 0.5);
 
 }
 
