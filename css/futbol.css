@@ -29,7 +29,6 @@
 }
 .card1 {
     background-color: rgb(214, 231, 212);
-    height: 210px; 
     padding: 20px 20px; 
     border: 10px solid black;
     border-style: ridge;
@@ -38,7 +37,7 @@
 
 .card2 {
     background-color: rgb(214, 231, 212);
-    height: 210px;
+    
     padding: 20px 20px; 
     border: 10px solid black;
     border-style: ridge;
@@ -56,7 +55,6 @@
 
 .card3 {
     background-color: rgb(214, 231, 212);
-    height: 420px;
     padding: 20px 20px; 
     border: 3px solid black;
     overflow: hidden;
@@ -66,7 +64,6 @@
 
 .card4 {
     background-color: rgb(214, 231, 212);
-    height: 420px;
     padding: 20px 20px; 
     border: 3px solid black;
     overflow: hidden;
@@ -88,8 +85,7 @@ ul{
 footer {
     grid-area: bottom;
     display: grid;
-    grid-template-areas:
-        'left center right';
+    grid-template-areas: 'left center right';
     color: rgb(34, 32, 32);
     background-color: rgb(214, 231, 212);
     border: 10px solid black;
@@ -140,13 +136,26 @@ footer div {
 @media screen and (max-width: 768px) {
 
     #content{
-        display: flex;
-        flex-wrap: nowrap;
+        display: grid;
+        grid-template-columns: 1fr;
     }
-    .card1 {
-        width: 100%;
+
+    footer {
+        grid-area: bottom;
+        display: grid;
+        grid-template-areas:
+            'left center right';
+        color: rgb(34, 32, 32);
     }
-    .card2{
-        width: 100%;
+    #izqFooter {
+        grid-area: left;
+    }
+    
+    #cntrFooter {
+        grid-area: center;
+    }
+    
+    #drchaFooter {
+        grid-area: right;
     }
 }
