@@ -1,15 +1,10 @@
 body {
-    height: 100vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     display: flex;
     margin: 0;
     padding: 0;
     flex-direction: column;
-    margin: 0;
-    padding: 0;
-    background-image: url('/img/volei_fondo.png');
-    animation: moverImagen 25s linear infinite;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    background-color: rgba(0, 128, 0, 0.5);
+    background-color: #e0e872;
 }
 
 .logo_deportes {
@@ -18,7 +13,7 @@ body {
 
 .titulo {
     display: flex;
-    background-image: url("../img/Rugby/fondoRugby.jpg");
+    background-image: url("../img/Volley/fondoVolleyball.jpg");
     width: 100%;
     background-position: center;
     color: white;
@@ -27,7 +22,7 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-style: italic;
     text-decoration: underline;
-    border: 1px solid #008000;
+    border: 1px solid #e0e872;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -39,19 +34,19 @@ body {
 
 .descripcion {
     padding: 10px;
-    border-style: double;
+    border-style: ridge;
     border-color: black;
     border-width: 10px;
     flex: 7;
-    background-color: rgba(0, 128, 0, 0.5);
+    background-color: #e0e872;
 }
 
 .premios {
     padding: 10px;
-    border-style: double;
+    border-style: ridge;
     border-color: black;
     border-width: 10px;
-    background-color: rgba(0, 128, 0, 0.5);
+    background-color: #e0e872;
     flex: 3;
 }
 
@@ -62,15 +57,15 @@ body {
 
 .apuntarse {
     padding: 10px;
-    border-style: double;
+    border-style: ridge;
     border-color: black;
     border-width: 10px;
-    background-color: rgba(0, 128, 0, 0.5);
+    background-color: #e0e872;
     flex: 10;
 }
 
 .trophy {
-    height: 118px;
+    height: 150px;
     width: auto;
 }
 
@@ -141,19 +136,19 @@ footer div {
 
     .descripcion {
         padding: 10px;
-        border-style: double;
+        border-style: ridge;
         border-color: black;
         border-width: 10px;
         flex: 5;
-        background-color: rgba(0, 128, 0, 0.5);
+        background-color: #e0e872;
     }
     
     .premios {
         padding: 10px;
-        border-style: double;
+        border-style: ridge;
         border-color: black;
         border-width: 10px;
-        background-color: rgba(0, 128, 0, 0.5);
+        background-color: #e0e872;
         flex: 3;
     }
 
@@ -198,18 +193,3 @@ footer div {
         grid-area: right;
     }
 }
-
-
-@keyframes moverImagen {
-    0% {
-        background-position: 0 0;
-        /* Posición inicial de la imagen de fondo */
-    }
-
-    100% {
-        background-position: 100% 0;
-        /* Posición final de la imagen de fondo */
-    }
-}
-
-
