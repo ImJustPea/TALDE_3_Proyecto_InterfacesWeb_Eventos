@@ -17,6 +17,15 @@ body {
     background-image: url('/img/volei_fondo.png');
     animation: moverImagen 25s linear infinite;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgba(242, 157, 53, 0.5); 
+}
+
+#content{
+    display:flex;
+    flex-wrap: nowrap;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    
 }
 
 @keyframes moverImagen {
@@ -38,7 +47,11 @@ body {
 .logo_deportes{
     width: 150px;
 }
-.titulo{
+
+
+
+
+#header{
     display: flex;
     background-image: url("../img/Baloncesto/baloncesto_logo_2.jpg");
     width: 100%;
@@ -46,16 +59,21 @@ body {
     color: white;
     height: 150px;
     font-size: 28px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-style: italic;
     text-decoration: underline;
-    border: 3px solid rgb(215, 130, 25);
+    background-color: rgba(242, 157, 53, 0.5);
 }
-    .fila3{
-        display: flex;
-        flex-direction: row;
-       
-    }
+
+
+
+.descripcion-premios {
+    display: flex;
+    flex-direction: row; /* Coloca descripcion y premios en la misma fila */
+   
+}
+
+
+   
     .descripcion{
         
         padding: 10px;
@@ -64,19 +82,19 @@ body {
         border-width: 3px;
         flex: 7; 
         
-        background-color: rgb(242, 157, 53);
+        background-color: rgba(242, 157, 53, 0.5);
     }
     .premios{
         padding: 10px;
         border-style: solid;
         border-color: black;
         border-width: 3px;
-        background-color: rgb(242, 157, 53);
-        flex: 3; ;
+        background-color: rgba(242, 157, 53, 0.5);
+        flex: 3; 
     }
     .video{
         display: flex;
-        
+       
         width: 80%;
         align-self: center;
     }
@@ -87,25 +105,50 @@ body {
         border-style: solid;
         border-color: black;
         border-width: 3px;
-        background-color: rgb(242, 157, 53); 
+        background-color: rgba(242, 157, 53, 0.5); 
+        
     }
     .contenedorbo {
         position: relative; 
         width: 100%; 
         height:100px; 
-        background-color: rgb(242, 157, 53); 
+        
     }
 
     .boton-naranja {
         position: absolute;
         top: 50%;
         right: 20px;
-        background-color: rgb(242, 157, 53); 
+        background-color: rgba(242, 157, 53, 0.5);
         color: black;
         padding: 10px 20px;
         border: solid;
         border-radius: 5px;
     }
+
+
+
+
+    @media screen and (max-width: 768px) {
+
+        #content{
+            display: flex;
+            flex-direction: column;
+        }
+        .premios {
+            width: 100%;
+        }
+        .descripcion{
+            width: 100%;
+        }
+        .inscripcion{
+            width: 100%;  
+        }
+        .video{
+            width: 100%; 
+        }
+    }
+
 
 
 
