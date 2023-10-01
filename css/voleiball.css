@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     flex-direction: column;
-    background-color: #008000;
+    background-color: #e0e872;
 }
 
 .logo_deportes {
@@ -13,7 +13,7 @@ body {
 
 .titulo {
     display: flex;
-    background-image: url("../img/Rugby/fondoRugby.jpg");
+    background-image: url("../img/Volley/fondoVolleyball.jpg");
     width: 100%;
     background-position: center;
     color: white;
@@ -22,7 +22,7 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-style: italic;
     text-decoration: underline;
-    border: 1px solid #008000;
+    border: 1px solid #e0e872;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -34,19 +34,19 @@ body {
 
 .descripcion {
     padding: 10px;
-    border-style: double;
+    border-style: ridge;
     border-color: black;
     border-width: 10px;
     flex: 7;
-    background-color: #008000;
+    background-color: #e0e872;
 }
 
 .premios {
     padding: 10px;
-    border-style: double;
+    border-style: ridge;
     border-color: black;
     border-width: 10px;
-    background-color: #008000;
+    background-color: #e0e872;
     flex: 3;
 }
 
@@ -57,15 +57,15 @@ body {
 
 .apuntarse {
     padding: 10px;
-    border-style: double;
+    border-style: ridge;
     border-color: black;
     border-width: 10px;
-    background-color: #008000;
+    background-color: #e0e872;
     flex: 10;
 }
 
 .trophy {
-    height: 118px;
+    height: 150px;
     width: auto;
 }
 
@@ -136,19 +136,19 @@ footer div {
 
     .descripcion {
         padding: 10px;
-        border-style: double;
+        border-style: ridge;
         border-color: black;
         border-width: 10px;
         flex: 5;
-        background-color: #008000;
+        background-color: #e0e872;
     }
     
     .premios {
         padding: 10px;
-        border-style: double;
+        border-style: ridge;
         border-color: black;
         border-width: 10px;
-        background-color: #008000;
+        background-color: #e0e872;
         flex: 3;
     }
 
