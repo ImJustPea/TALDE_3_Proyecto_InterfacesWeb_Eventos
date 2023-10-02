@@ -3,7 +3,7 @@ body {
     flex-direction: column;
     margin: 0;
     padding: 0;
-    background-image: url('img/volei_fondo.png');
+    background-image: url('../img/volei_fondo.png');
     animation: moverImagen 25s linear infinite;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: rgba(242, 157, 53, 0.5);
