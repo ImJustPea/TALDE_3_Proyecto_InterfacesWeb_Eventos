@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     flex-direction: column;
-    background-image: url('/img/volei_fondo.png');
+    background-image: url('img/volei_fondo.png');
     animation: moverImagen 25s linear infinite;
     background-color: rgba(167, 175, 58, 0.5);
 }
