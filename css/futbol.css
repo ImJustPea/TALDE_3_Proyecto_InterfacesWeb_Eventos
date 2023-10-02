@@ -5,7 +5,7 @@
 body {
     margin: 0px;
     background-color: rgba(173, 199, 170, 0.5);
-    background-image: url('img/volei_fondo.png');
+    background-image: url('../img/volei_fondo.png');
     animation: moverImagen 25s linear infinite;
 }
 
@@ -13,7 +13,7 @@ body {
 
 #header {
     display: flex;
-    background-image: url("img/Futbol/futbol_logo2.jpg");
+    background-image: url("../img/Futbol/futbol_logo2.jpg");
     width: 100%;
     background-position: center;
     color: rgb(51, 67, 24);
